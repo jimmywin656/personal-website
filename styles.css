@@ -7,6 +7,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(36, 37, 42);
+    color: #edf0f1;
 }
 
 li a {
@@ -22,7 +23,7 @@ li a {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #edf0f1;
     transition: all 0.2s ease-in-out;
 }
 
@@ -42,7 +43,7 @@ li a {
 }
 
 .navbar li a:hover {
-    color:  rgba(68, 203, 177);
+    color:  rgb(68, 203, 177);
 }
 
 button {
@@ -53,36 +54,37 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     margin-left: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 button:hover {
     background-color:  rgba(68, 203, 177, 0.7);
+    color: #edf0f1;
 }
 
 .block {
-    background-color: rgb(99, 99, 99);
-    border: 2px solid white;
+    background-color: rgb(50, 51, 55);
+    border: 2px solid #edf0f1;
     border-radius: 20px;
     margin: 20px 40px;
-    padding: 10px 10px;
+    padding: 10px 14px;
 }
 
 .title, .mini-title {
     color: #edf0f1;
 }
 
-.card {
+.travel_card {
     color: #edf0f1;
     background-color: rgb(47, 48, 53);
     border: 2px solid #edf0f1;
     border-radius: 10px;
-
     width: 300px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    background-image: none;
-
 }
 
 .background {
@@ -97,7 +99,7 @@ table, th, td{
     font-weight: 300;
 }
 
-table, .card {
+table, .travel_card {
     margin-left: auto;
     margin-right: auto;
 }
@@ -137,7 +139,6 @@ td {
     gap: 1rem;
     margin-left: 20px;
     margin-right: 20px;
-    /* align-items: flex-start; */
 }
 
 .card_header > img {
@@ -172,4 +173,64 @@ td {
 
 img {
     width: 250px;
+}
+
+.me {
+    color: rgb(68, 203, 177);
+}
+
+.about_me_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.about_me_grid > .card {
+    border: 2px solid #edf0f1;
+    background: rgb(47, 48, 53);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.card.about_me {
+    margin-left: 30px;
+    align-items: flex-start;
+    background-image: url("../images/about-me-background.png");
+    background-size: auto;
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    overflow: auto;
+}
+
+.card.work {
+    margin-right: 30px;
+    overflow: auto;
+    background-image: url("images/work-background.jpeg");
+}
+
+.card.work > p {
+    font-size: 13px;
+}
+
+.about_me_title {
+    display: inline-block;
+}
+
+.pfp {
+    float: right;
+    border-radius: 50px;
+    margin-top: 6px;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+.mini-title {
+    margin: 12px 0px;
+}
+
+.work-pic {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+    min-width: 100px;
 }
