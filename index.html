@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <!-- Requirement-1.A -->
     <title>Jimmy Nguyen</title>
 </head>
 <body>
     <!-- Requirement-1.B -->
-    <header>
+    <header class="header">
+        <img class="name-logo" src="images/name-logo.png" alt="Jimmy Nguyen">
         <!-- Requirement-1.D -->
         <nav>
             <!-- Requirement-1.K -->
-            <ul>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+            <ul class="navbar">
+                <li class="nav-button"><a href="#about_me">About Me</a></li>
+                <li class="nav-button"><a href="#hobbies">Hobbies</a></li>
                 <!-- Requirement-1.J -->
-                <li><a href="webpage/travel.html">Travel</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-button"><a href="webpage/travel.html">Travel</a></li>
             </ul>
         </nav>
+        <a href="#contact"><button>Contact</button></a>
     </header>
 
     <hr>
 
     <!-- Requirement-1.E -->
     <section id="about_me">
-        <h2>About ME</h2>
+        <h2 class="title">About ME</h2>
         <!-- OPTIONAL PICTURE OF ME -->
         <img src="images/jimmy.jpeg" alt="Jimmy Nguyen">
         <!-- Requirement-1.G -->
@@ -34,7 +36,7 @@
             died after a couple of years leading to me building my own computer. Over the years, my interests
             in computers grew and I decided to major in computer science to further my knowledge of computers.
         </p>
-        <h3>Home City</h3>
+        <h3 class="mini-title">Home City</h3>
         <img src="images/baldwin_park.jpeg" alt="Baldwin Park">
         <img src="images/in-n-out.jpeg" alt="Very First In-N-Out">
         <p>I live in Baldwin Park. Baldwin Park is a relatively small city about 15 minutes away from Pomona
@@ -46,9 +48,9 @@
 
     <section id="hobbies">
         <!-- Requirement-1.F -->
-        <h2>Hobbies</h2>
+        <h2 class="title">Hobbies</h2>
         <div id="gaming_hobby">
-            <h3>Gaming</h3>
+            <h3 class="mini-title">Gaming</h3>
             <!-- Requirement-1.H (PROBABLY CHANGE THIS TO <P> OR MOVE SPAN SOMEWHERE ELSE)-->
             <span><strong>Valorant</strong></span>
             <p>Currently, Valorant is the game I play the most, but I have played many other games such as: 
@@ -74,14 +76,14 @@
             </p>
         </div>
         <div id="gym_hobby">
-            <h3>Gym</h3>
+            <h3 class="mini-title">Gym</h3>
             <img src="images/gym.jpeg" alt="Stock gym photo">
             <p>I recently started going to the gym this year and it has been really fun. I started going 
                 to improve my strength but also to gain confidence in myself and my looks.
             </p>
         </div>
         <div id="sports_hobby">
-            <h3>Sports</h3>
+            <h3 class="mini-title">Sports</h3>
                 <!-- Requirement-1.P -->
                 <details>
                     <!-- Requirement-1.Q -->
