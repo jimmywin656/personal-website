@@ -88,7 +88,7 @@ button:hover {
 }
 
 .background {
-    background-image: url("world_map.gif");
+    background-image: url("../images/world_map.gif");
     background-size: auto;
     object-position: center;
     object-fit: cover;
@@ -207,7 +207,8 @@ img {
 .card.work {
     margin-right: 30px;
     overflow: auto;
-    background-image: url("images/work-background.jpeg");
+    background-image: url("../images/work-background.jpeg");
+    max-height: 350px;
 }
 
 .card.work > p {
@@ -233,4 +234,140 @@ img {
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
     min-width: 100px;
+}
+
+.item {
+    background-color: rgb(47, 48, 53);
+    padding: 1em;
+    font-weight: 700;
+    color: #edf0f1;
+    text-align: center;
+    border: 2px solid #edf0f1;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 415px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.hobby-title {
+    color: #edf0f1;
+    text-align: center;
+    font-size: 62px;
+    text-shadow: rgb(158, 153, 120) 4px 2px 6px;
+    letter-spacing: 4px;
+}
+
+.mini-title {
+    font-size: 24px;
+    margin-bottom: 18px;
+    margin-top: 4px;
+}
+
+.hobby-desc {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hobby-desc.chess-desc {
+    margin-top: 0;
+}
+
+.val_graph {
+    width: 400px;
+    box-shadow: 0px 0px 6px white;
+}
+
+.item.gaming {
+    background-image: url("../images/game-background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-position: center;
+}
+
+.hobby-desc.game {
+    margin-bottom: 30px;
+}
+
+.mini-title.gaming {
+    color: rgb(243, 42, 42);
+    margin-top: 10px;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+.item.chess {
+    background-image: url("../images/chess_background.jpg");
+    min-height: 480px;
+}
+
+.mini-title.chess {
+    color: rgb(10, 155, 10);
+    margin-top:10px;
+}
+
+.hikaru {
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 2px;
+    box-shadow: 0px 0px 6px white;
+}
+
+.hikaru img {
+    margin-left: -32px;
+}
+
+.chess-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.chess-link {
+    color: rgb(10, 155, 10);
+    text-decoration: none;
+}
+
+.item.gym {
+    background-image: url("../images/gym-background.jpg");
+    background-position: -50px -40px;
+    background-repeat: no-repeat;
+}
+
+.mini-title.gym {
+    color: rgb(8, 165, 217);
+    margin-top: 20px;
+}
+
+.hobby-desc.gym {
+    margin-bottom: 40px;
+}
+
+.gym-pic {
+    box-shadow: 0px 0px 6px white;
+    overflow: hidden;
+    width: 350px;
+    margin-left: 80px;
+    border-left: none;
+}
+
+.bench {
+    width: 350px;
+    display: block;
 }
