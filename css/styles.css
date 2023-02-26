@@ -171,10 +171,6 @@ td {
     transform: scale(1.01);
 }
 
-img {
-    width: 250px;
-}
-
 .me {
     color: rgb(68, 203, 177);
 }
@@ -249,22 +245,13 @@ img {
     min-height: 415px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1em;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-bottom: 40px;
-}
-
 .hobby-title {
     color: #edf0f1;
     text-align: center;
     font-size: 62px;
     text-shadow: rgb(158, 153, 120) 4px 2px 6px;
     letter-spacing: 4px;
+    margin-bottom: 50px;
 }
 
 .mini-title {
@@ -370,4 +357,69 @@ figcaption {
 .bench {
     width: 350px;
     display: block;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+}
+
+.column {
+    display: inline-block;
+    max-width: 33.33%;
+}
+
+.column.sports {
+    background-color: #12110f;
+    font-weight: 400;
+    border: 2px solid #edf0f1;
+    border-radius: 10px;
+    padding: 1em;
+    max-width: 500px;
+    min-width: 350px;
+    min-height: 100px;
+}
+
+.column.basketball {
+    overflow: hidden;
+    margin-left: -125px;
+}
+
+.basketball-title {
+    color: orange;
+}
+
+.badminton-title {
+    color: rgb(255, 255, 0);
+}
+
+.mini-title.sport {
+    color: rgb(68, 203, 177);
+}
+
+#bball-image {
+    display: block;
+    width: 350px;
+}
+
+#badminton-image {
+    display: block;
+    width: 225px;
+    margin-top: -10px;
+}
+
+img {
+    width: 250px;
 }
