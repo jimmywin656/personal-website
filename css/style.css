@@ -427,14 +427,6 @@ figcaption {
     margin-left: -125px;
 }
 
-.basketball-title {
-    color: orange;
-}
-
-.badminton-title {
-    color: rgb(255, 255, 0);
-}
-
 summary {
     cursor: pointer;
 }
@@ -541,4 +533,36 @@ footer:last-child {
 #email-icon {
     display: block;
     width: 80px;
+}
+
+.basketball-title {
+    color: orange;
+    font-size: 18px;
+}
+
+.badminton-title {
+    color: rgb(255, 255, 0);
+    font-size: 18px;
+}
+
+details summary {
+    background: rgb(36, 37, 42);
+    color: rgb(2, 169, 2);
+}
+
+details {
+    background-color: rgb(51, 53, 60);
+    box-shadow: 1px 1px 4px 1px #edf0f1;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+details[open] summary {
+    color: red;
+}
+
+.summary-box {
+    padding: 4px 4px;
+    font-size: 14px;
 }
