@@ -545,12 +545,12 @@ footer:last-child {
     font-size: 18px;
 }
 
-details summary {
+details summary {       /* Requirement-2.H */
     background: rgb(36, 37, 42);
     color: rgb(2, 169, 2);
 }
 
-details {
+details {           /* Requirement-2.G */
     background-color: rgb(51, 53, 60);
     box-shadow: 1px 1px 4px 1px #edf0f1;
     padding-left: 5px;
