@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
-body {
-    margin: 0;
-    font-family: "Montserrat", Helvetica, sans-serif;
-    position: relative;
+body {      /* Requirement-2.A */
+    margin: 0;      /* Requirement-2.6 */
+    font-family: "Montserrat", Helvetica, sans-serif;   /* Requirement-2.1 */
+    position: relative;         /* Requirement-2.15 */
     height: 100%;
     width: 100%;
-    background-color: rgb(36, 37, 42);
-    color: #edf0f1;
+    background-color: rgb(36, 37, 42);      /* Requirement-2.4 */
+    color: #edf0f1;     /* Requirement-2.3 */
 }
 
-li a {
+li a {      /* Requirement-2.B */
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
+    list-style: none;       /* Requirement-2.8 */
 }
 
-.header {
+.header {   /* Requirement-2.C */
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 30px 5%;
-    border-bottom: 2px solid #edf0f1;
+    border-bottom: 2px solid #edf0f1;       /* Requirement-2.5 */
     transition: all 0.2s ease-in-out;
     margin-bottom: 40px;
 }
@@ -32,19 +33,19 @@ li a {
 .name-logo {
     cursor: pointer;
     margin-right: auto;
-    width: 140px;
+    width: 140px;       /* Requirement-2.7 */
 }
 
-.navbar li {
+.navbar li {        /* Requirement-2.F */
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 20px;      /* Requirement-2.9 */
 }
 
 .navbar li a {
     transition: all 0.3s ease 0s;
 }
 
-.navbar li a:hover {
+.navbar li a:hover {        /* Requirement-2.E */
     color:  rgb(68, 203, 177);
 }
 
@@ -151,7 +152,7 @@ td {
 
 .card_header > img {
     display: block;
-    width: 100%;
+    width: 100%;            /* Requirement-2.10 */
     aspect-ratio: 16/9;
     object-fit: cover;
     max-height: 250px;
@@ -205,6 +206,7 @@ td {
     object-position: center;
     height: 350px;
     overflow: auto;
+    visibility: visible;        /* Requirement-2.16 */
 }
 
 .card.work {
@@ -215,6 +217,7 @@ td {
 
 .card.work > p {
     font-size: 13px;
+    clear: right;       /* Requirement-2.13 */
 }
 
 .about_me_title {
@@ -229,7 +232,7 @@ td {
 }
 
 .pfp {
-    float: right;
+    float: right;           /* Requirement-2.11 */
     border-radius: 50px;
     margin-top: 6px;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
@@ -276,7 +279,7 @@ td {
     text-align: center;
     font-size: 62px;
     text-shadow: rgb(158, 153, 120) 4px 2px 6px;
-    letter-spacing: 4px;
+    letter-spacing: 4px;    /* Requirement-2.2 */
     margin-bottom: 50px;
 }
 
@@ -347,7 +350,7 @@ figcaption {
 }
 
 .chess-container {
-    display: flex;
+    display: flex;          /* Requirement-2.12 */
     flex-direction: column;
     margin-top: 0;
 }
@@ -361,6 +364,7 @@ figcaption {
     background-image: url("../images/gym-background.jpg");
     background-position: -50px -40px;
     background-repeat: no-repeat;
+    z-index: 10;        /* Requirement-2.17 */
 }
 
 .mini-title.gym {
@@ -374,7 +378,7 @@ figcaption {
 
 .gym-pic {
     box-shadow: 0px 0px 6px white;
-    overflow: hidden;
+    overflow: hidden;           /* Requirement-2.14 */
     width: 350px;
     margin-left: 80px;
     border-left: none;
@@ -439,7 +443,7 @@ summary {
     color: rgb(68, 203, 177);
 }
 
-#bball-image {
+#bball-image {      /* Requirement-2.D */
     display: block;
     width: 350px;
 }
