@@ -404,6 +404,7 @@ figcaption {
     justify-content: space-evenly;
     gap: 1rem;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .column {
